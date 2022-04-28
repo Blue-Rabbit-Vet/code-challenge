@@ -1,30 +1,39 @@
-# ide
-.idea
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
 
-# dependencies
-node_modules
+# Distribution / packaging
+.Python build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
 
-# testing
-coverage
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# production
-build
-dist
-
-# misc
-.DS_Store
-*.pem
-
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# local env files
+# Environments
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
