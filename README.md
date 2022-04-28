@@ -1,31 +1,24 @@
+# Blue Vet Code Challenge
 
-# Blue Rabbit Code Challenge
+Hello! Thank you for the opportunity to show my skills via this code challenge. I don't use JavaScript very often at my current place of work, so I decided to take a little bit more time to refresh myself before starting this code challenge. It was very nice to stretch my legs again. I've forgotten how much I missed using React!
 
-Fork this repo and create a Full Stack app using languages and frameworks of your choice that 
-*literally* introduces you to us. Submit your response back to us here in the form of a pull 
-request or submit it to us privately. Please don't spend more than a couple hours on it. It's ok
-if you don't finish, just tackle the requirements in order and take it as far as you can in the time frame.
+## Database
 
-Include A README with instructions on how to build/run the app. Use the README to let us know
-why you chose the technologies you did. Notes on design patterns, challenges, or aspects
-of your stack that you find interesting are also appreciated!
+For the storage mechanism, I decided to use a database, specifically SQLite3. The portability of and ease of use of SQLite seemed like a perfect fit for such a small project.
 
-### Requirements
-1. Create an API with an endpoint or operation that we can call that tells us your name. The shape of the data 
-and the storage mechanism are up to you. It's ok if it takes no params and returns only your name.
-2. Create a minimal frontend that calls your api and displays your name when we run it.
-3. Add an API endpoint or operation that takes a name and stores it.
-4. Add an input to the frontend that we can use to submit a name to the endpoint or operation you just created.  
-5. Add an input to the frontend that lets us upload an image avatar and submit it to your API.
+## Backend
 
+For the backend, I decided to use Node with Express so that I could spin up something pretty quickly while using JavaScript throughout the stack. It was my first time building a file endpoint with Express, so I did get a little tripped up using the multer package that was required. Especially due to the fact that file saving does not include file extensions in the save filename out of the box. Nothing a little googling can't fix.
 
+## Frontend
 
+For the frontend, I went with React via create-react-app. This is the flavor of JavaScript library that I first learned a few years ago, and I have missed using it. I have heard lots of good things about other libraries like Svelte and Vue.js, as well as their framework counterparts Next.js, SvelteKit, and Nuxt.js. When I have more time, I'd like to dig into them.
 
+## Running this project
 
-
-
-    
-
-
-
-
+1. Navigate to the 'api' folder via bash terminal.
+2. Install required packages with the command `npm install`.
+3. Run the API with the command `npm start`.
+4. In a new terminal instance, navigate to the 'front' folder.
+5. Install required packages with the command `npm install`.
+6. Run the frontend with the command `npm start`. A browser window/tab should open with the react frontend running.
