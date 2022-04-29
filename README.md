@@ -1,31 +1,46 @@
+## Setup
 
-# Blue Rabbit Code Challenge
+First clone the repository and navigate to the project folder:
 
-Fork this repo and create a Full Stack app using languages and frameworks of your choice that 
-*literally* introduces you to us. Submit your response back to us here in the form of a pull 
-request or submit it to us privately. Please don't spend more than a couple hours on it. It's ok
-if you don't finish, just tackle the requirements in order and take it as far as you can in the time frame.
+```sh
+$ git clone https://github.com/cwg83/blue-rabbit-code-challenge.git
+$ cd blue-rabbit-code-challenge
+```
 
-Include A README with instructions on how to build/run the app. Use the README to let us know
-why you chose the technologies you did. Notes on design patterns, challenges, or aspects
-of your stack that you find interesting are also appreciated!
+Create the virtual environment:
 
-### Requirements
-1. Create an API with an endpoint or operation that we can call that tells us your name. The shape of the data 
-and the storage mechanism are up to you. It's ok if it takes no params and returns only your name.
-2. Create a minimal frontend that calls your api and displays your name when we run it.
-3. Add an API endpoint or operation that takes a name and stores it.
-4. Add an input to the frontend that we can use to submit a name to the endpoint or operation you just created.  
-5. Add an input to the frontend that lets us upload an image avatar and submit it to your API.
+```sh
+$ python -m virtualenv env
+```
 
+Activate the virtual environment:
 
+```sh
+Windows:
+$ env\Scripts\activate
+Linux/Mac:
+source env/bin/activate
+```
 
+Install the dependencies:
 
+```sh
+(env)$ pip install -r requirements.txt
+```
 
+Then navigate to the app folder inside the project folder and run the local server:
+```sh
+(env)$ cd calvin_api
+(env)$ python manage.py runserver
+```
+The application will be viewable at `http://127.0.0.1:8000/calvin_api/`.
 
+Notes:
+I initially started creating the api in node.js because it is an environment that I haven't had the chance to play around with much and I figured I could try to learn something while completing the challenge. I soon realized that learning node while completing the challenge would not really be viable with the time I had allowed myself to finish, so decided to switch gears and build it in an environment that I am familiar with: Django.
 
-    
+The endpoint for the GET and PUT requests to view and add names to the database was up and working pretty quickly. Configuring the file upload took a bit longer, and I had to do some Googling to figure out the best way to handle file uploads in Django. I then spent a bit of time styling the website, as I wanted it to at least look presentable rather than keep the default table and form styles. I love that a Django application with a database and API can be deployed relatively quickly and I'm looking forward to learning more about it.
 
+I also decided to deploy a live version of the challenge on pythonanywhere.com, which can be viewed here:
+https://cwg83.pythonanywhere.com/calvin_api/
 
-
-
+I'm looking forward to any feedback you have as well as the next steps in the application process.

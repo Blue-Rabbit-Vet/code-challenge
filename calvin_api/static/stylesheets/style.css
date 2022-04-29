@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Roboto:wght@300;400&display=swap');
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-header {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background: #0089F7;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#introduction {
+    width: 530px;
+    padding: 15px;
+    margin: 15px;
+}
+
+#content-heading {
+    width: fit-content;
+}
+
+#main-footer {
+    font-size: 12px;
+    width: fit-content;
+    padding: 5px;
+}
+
+#main-header, #main-content, #main-footer {
+    flex-shrink: 0;
+}
+#people-container {
+    margin: 15px;
+    padding: 0;
+}
+#people-caption {
+    text-align: left;
+}
+#people-table {
+    table-layout: fixed;
+    width: 530px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+#people-table th, td {
+    border: 1px solid black;
+    padding: 15px;
+}
+
+#people-table th {
+    font-weight: bold;
+}
+
+#add-people-caption {
+    width: 100%;
+    text-align: left;
+}
+.image-cell {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.profile-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    float: left;
+    border: 2px solid black;
+}
+
+#id_name {
+    padding: 5px;
+    border: 2px solid gray;
+    width: 185px;
+    height: 29px;
+    font-family: 'Roboto', sans-serif;
+}
+#id_name:focus {
+    outline: none;
+    border-color: black;
+}
+#id_image {
+    cursor: pointer;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+#image-label {
+    border: 2px solid gray;
+    color: gray;
+    line-height: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 185px;
+    padding: 10px 5px;
+}
+
+#save-btn {
+    background: #0089F7;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+}
+
+#image-label, #save-btn {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#image-label-text {
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+#image-label svg {
+    fill: gray;
+}
+
+#image-label:hover,
+#image-label:hover svg {
+    fill: black;
+    color: black;
+    border-color: black;
+}
+
+#file-chosen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+#form-wrapper {
+    width: 530px;
+    padding: 15px;
+}
+
+.field-wrapper {
+    margin-bottom: 15px;
+    margin-left: auto;
+}
+
+.field-wrapper label {
+    font-weight: bold;
+}
+
+.field-wrapper-image {
+    display: flex;
+    flex-direction: row;
+}
