@@ -104,7 +104,7 @@ article {
     border: 2px solid gray;
     width: 185px;
     height: 29px;
-    font-family: font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 #id_name:focus {
     outline: none;
