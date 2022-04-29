@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Blue Rabbit Challenge</title>
+    <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
+</head>
+<body>
+  <article>
+        <div id="main-header">
+            <div id="logo">
+                <h1>Blue Rabbit Challenge</h1>
+            </div>
+        </div>
+        <div id="main-content">
+            <div id="content-heading">Hello!</div>
+            <div id="content"> My name is {{ people.0.name }}.</div>
+            <div id="people-container">
+                <table id="people-table">
+                    <caption>Current People:</caption>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Profile Pic</th>
+                    </tr>
+                    {% for person in people %}
+                    <tr>
+                        <td> {{ person.name }}</td>
+                        <td> {{ person.id }}</td>
+                        <td class="image-cell">
+                            <img class="profile-image" src="../uploads/{{ person.image }}" alt="image">
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+            <form method="POST" action="{% url 'index' %}" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="save">
+            </form>
+        </div>
+
+      <div id="main-footer">by Calvin Goodale</div>
+      </article>
+</body>
+</html>

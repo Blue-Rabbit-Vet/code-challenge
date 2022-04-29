@@ -1,0 +1,71 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-header {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    flex-grow: 1;
+    margin: 15px;
+    -webkit-box-shadow: 0 0 10px gray;
+        box-shadow: 0 0 10px gray;
+}
+
+#content {
+    width: 60%;
+}
+
+#content-heading {
+    padding: 15px;
+    width: fit-content;
+}
+
+#main-footer {
+    font-size: 12px;
+    width: fit-content;
+    padding: 5px;
+}
+
+#main-header, #main-content, #main-footer {
+    flex-shrink: 0;
+}
+
+#people-table {
+    table-layout: fixed;
+    margin: 15px;
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.image-cell {
+    width: 50px;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+}
