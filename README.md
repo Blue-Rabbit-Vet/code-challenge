@@ -1,6 +1,6 @@
 ## Setup
 
-First clone the repository and navigate to the propject folder:
+First clone the repository and navigate to the project folder:
 
 ```sh
 $ git clone https://github.com/cwg83/blue-rabbit-code-challenge.git
