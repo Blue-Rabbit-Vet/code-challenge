@@ -10,10 +10,7 @@ $ cd blue-rabbit-code-challenge
 Create the virtual environment:
 
 ```sh
-Windows:
 $ python -m virtualenv env
-Linux/Mac:
-$ python3 -m virtualenv env
 ```
 
 Activate the virtual environment:
