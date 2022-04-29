@@ -10,3 +10,7 @@ class AddPerson(ModelForm):
     class Meta:
         model = People
         fields = "__all__"
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['name'].widget.attrs.update({'placeholder': 'Enter name'})
