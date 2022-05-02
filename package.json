@@ -4,7 +4,8 @@
   "description": "Fork this repo and create a Full Stack app using languages and frameworks of your choice that  *literally* introduces you to us. Submit your response back to us here in the form of a pull  request or submit it to us privately. Please don't spend more than a couple hours on it. It's ok if you don't finish, just tackle the requirements in order and take it as far as you can in the time frame.",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon server/index.js"
+    "server": "nodemon server/index.js",
+    "seed": "node database/seed.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "express": "^4.18.1",
+    "mongoose": "^6.3.2",
     "nodemon": "^2.0.16"
   }
 }
