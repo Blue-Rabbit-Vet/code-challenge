@@ -1,13 +1,13 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import NameList from './components/NameList.js'
 
 function App() {
   const [myName, setName] = useState('Cynthia');
-  const [nameList, setLists] = useState([]);
   useEffect(() => {
     getMyName();
-  },[])
+  })
   const getMyName = () => {
     axios.get('http://localhost:3001/api/name')
       .then(res => {
@@ -22,7 +22,7 @@ function App() {
         <p>{myName}</p>
       </div>
       <div className="NameList">
-        <button className="add">Add a Name</button>
+        <NameList />
       </div>
     </div>
   );
