@@ -9,7 +9,8 @@ const getName = (req, res) => {
 const addName = (req, res) => {
   Name.create({
     firstName: req.body.firstName,
-    lastName: req.body.lastName
+    lastName: req.body.lastName,
+    image: req.body.image
   })
     .then((results) => res.status(201).send('success add a new name'))
     .catch((err) => res.status(400).send(err))
