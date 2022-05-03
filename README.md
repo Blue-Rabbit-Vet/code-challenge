@@ -1,8 +1,8 @@
 
 # About this application
-This is a Spring Boot + thymeleaf application built in MVC architecture 
-Since this is a small application, I used String to store data intead of creating a Model layer
-And since the requirement wasn't complicated, nothing was really chanllenging in this applcation 
+This is a Spring Boot + thymeleaf application built in MVC architecture. 
+Since this is a small application, I used String to store data intead of creating a Model layer.
+And since the requirement wasn't complicated, nothing was really chanllenging in this applcation. 
 I am used to separate the front and back end development, but for the small application like this, I choose Spring Boot + thymeleaf, because it integrated
 the front and back end very well. 
 
