@@ -30,7 +30,10 @@ const NameList = (props) => {
     <>
       <p>Display Name List: </p>
       {nameList.map((name, index) =>
-        <p key={index}>{name.firstName + ' ' + name.lastName}</p>
+        <div id="NameItem">
+          <p key={index}>{name.firstName + ' ' + name.lastName}</p>
+          <img src={name.image} alt={name.image} id="avatar"></img>
+        </div>
       )}
       <form>
         <div>
