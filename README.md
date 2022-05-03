@@ -23,6 +23,10 @@ and the storage mechanism are up to you. It's ok if it takes no params and retur
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install all the dependencies
+
 ### `npm run server`
 
 Runs the api in the development mode.\
@@ -38,6 +42,9 @@ lastName  | String
 
 Runs the seed.js file to insert my name to database
 
+## For Upload Image
+
+Make a copy of `.env.template` file to `.env` and replace corresponding personal cloudinary name and preset name
 
 
 

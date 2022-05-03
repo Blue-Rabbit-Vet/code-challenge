@@ -4,6 +4,10 @@ This is a mini app to display my name and contains a feature to add name to name
 
 In the project directory, you can run:
 
+### `npm install`
+
+Install all the dependencies
+
 ### `npm start`
 
 Runs the app in the development mode.\
