@@ -6,7 +6,7 @@
 
 3.And since the requirement wasn't complicated, nothing was really chanllenging in this applcation. 
 
-4.I am used to separate the front and back end development, but for the small application like this, I choose Spring Boot + thymeleaf, because it integrated the front and back end very well. 
+4.I am used to separate the front and back end development, but for the small application like this, I choose Spring Boot + thymeleaf, because Thymeleaf is a modern server-side rendered Java template engine, it integrated with back end very well. 
 
 # How to run
 1. download and unzip the application
