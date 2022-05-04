@@ -19,6 +19,18 @@ const Home: NextPage = () => {
   return (
     <div className="flex-fill d-flex flex-column">
       <HomeHeader name={name} />
+      <div className="d-flex align-items-center justify-content-center">
+        <small className="my-3 text-center">
+          Check out more of my work at{" "}
+          <a
+            href="https://mclaindevelopment.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            www.mclaindevelopment.com
+          </a>
+        </small>
+      </div>
       <div className="container mt-4 p-3">
         <div>
           <div className="row mt-3">
@@ -38,6 +50,7 @@ const Home: NextPage = () => {
                       <a
                         href="/api/name"
                         target="_blank"
+                        rel="noreferrer"
                         className={"btn btn-blue-rabbit"}
                       >
                         Test Api Endpoint!

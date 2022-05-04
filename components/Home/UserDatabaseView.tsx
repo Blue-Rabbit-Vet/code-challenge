@@ -44,6 +44,13 @@ const UserDatabaseView = ({ route }: { route: string }) => {
         </div>
       </div>
       <div className="card-body user-list flex-fill">
+        {userDataList?.length > 0 ? (
+          <></>
+        ) : (
+          <span className="fst-italic small text-muted p-3">
+            0 results returned
+          </span>
+        )}
         {userDataList?.map((n) => (
           <div key={n.id} className="p-2 d-flex align-items-center">
             <div className="rounded-circle shadow border border-secondary profile-picture-sm d-flex align-items-center justify-content-center">

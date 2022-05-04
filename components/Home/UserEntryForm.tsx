@@ -97,7 +97,6 @@ const UserEntryForm = () => {
                     console.error(e);
                   }
                 }}
-                required
               />
             </div>
             <div>
