@@ -74,6 +74,8 @@ For requirement #3, I have built an api endpoint here: [http://localhost:3000/ap
 - PUT - though I did not end up using the update functionality, PUT will update a user based on id.
 - DELETE - this will delete a user object from the list of uses in the "db" json file.
 
+The code that interacts with the data/users.json is in lib/db.ts and was based on some examples I found relating to reading/writing json to a file live
+from the Next.JS api.
 
 
 # Challenge Prompt:

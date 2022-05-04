@@ -107,6 +107,7 @@ const UserEntryForm = () => {
                 className="form-control"
                 placeholder="User's Name"
                 minLength={2}
+                maxLength={50}
                 onChange={(e) => {
                   setNameEntered(e?.target?.value);
                 }}

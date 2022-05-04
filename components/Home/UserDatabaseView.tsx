@@ -11,7 +11,7 @@ const UserDatabaseView = ({ route }: { route: string }) => {
 
   useEffect(() => {
     getNames(setUserDataList);
-  }, []);
+  }, [setUserDataList]);
 
   const deleteUser = async (id: number) => {
     await fetch("/api/names", {
