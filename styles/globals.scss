@@ -1,0 +1,27 @@
+@import "globals.imports";
+@import "globals.variables";
+@import "globals.buttons";
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat',"Poppins", Helvetica, Arial, sans-serif;;
+  border:none;
+  background-color:$main-bg-color;
+}
+a {
+  color: $blue-bg-color;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover{
+  color: $blue-accent-color;
+  text-decoration: none;
+}
+* {
+  box-sizing: border-box;
+}
+
+@import "Home/Home.module";

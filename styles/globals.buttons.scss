@@ -1,0 +1,15 @@
+﻿@import "globals.imports";
+@import "globals.variables";
+
+.btn-blue-rabbit{
+  @extend .btn-primary;
+  color: #fff;
+  background-color: $btn-bg-color;
+  border-color: $btn-bg-color;
+}
+
+.btn-blue-rabbit:hover,.btn-blue-rabbit:focus{
+  color:#fff;
+  background-color: $btn-hover-color;
+  border-color: $btn-hover-color;
+}

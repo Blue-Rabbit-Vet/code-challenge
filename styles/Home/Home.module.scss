@@ -1,0 +1,66 @@
+@import "styles/globals.variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;600;700;800&display=swap');
+.main {
+  background-color: $blue-bg-color;
+  position:relative;
+  -webkit-box-shadow: 0px 5px 10px 5px rgba(105,105,105,0.5);
+  box-shadow: 0px 5px 10px 5px rgba(105,105,105,0.5);  
+  font-family: "Poppins", Helvetica, Arial, sans-serif;
+}
+.blue-rabbit{
+  pointer-events: none;
+  position: absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  background-image: url("http://bluerabbit.vet/wp-content/uploads/2022/03/111Group-216.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.profile-picture{
+  max-height: 130px;
+  max-width: 130px;
+  min-width: 130px;
+  min-height: 130px;
+  overflow: hidden;
+}
+.profile-picture-sm{
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  overflow: hidden;
+}
+.profile-name{
+  color:$blue-bg-color;
+}
+.user-list{
+  max-height: 412px;
+  overflow-y:auto;
+}
+
+.title {
+  font-size: 77px;
+  color: #fff;
+  line-height: 70px;
+  font-weight: 800;
+  letter-spacing: -3px;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title .name{
+  color: $blue-accent-color;
+}
+
+
+
+@media (max-width: 600px) {
+
+}
