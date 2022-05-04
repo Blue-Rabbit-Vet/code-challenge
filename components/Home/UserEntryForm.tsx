@@ -86,7 +86,7 @@ const UserEntryForm = () => {
                 className="form-control mb-3"
                 type="file"
                 name="userAvatar"
-                accept=".jpeg, .png, .jpg"
+                accept=".jpeg, .png, .jpg, .gif"
                 onChange={(e) => {
                   try {
                     setFileNameSelected(e?.target?.value);
