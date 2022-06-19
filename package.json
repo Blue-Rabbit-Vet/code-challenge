@@ -1,0 +1,24 @@
+{
+  "name": "code-challenge-dmisasi",
+  "description": "Fork this repo and create a Full Stack app using languages and frameworks of your choice that \r *literally* introduces you to us. Submit your response back to us here in the form of a pull \r request or submit it to us privately. Please don't spend more than a couple hours on it. It's ok\r if you don't finish, just tackle the requirements in order and take it as far as you can in the time frame.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meshtatsuo/code-challenge-DMisasi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Meshtatsuo/code-challenge-DMisasi/issues"
+  },
+  "homepage": "https://github.com/Meshtatsuo/code-challenge-DMisasi#readme",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
