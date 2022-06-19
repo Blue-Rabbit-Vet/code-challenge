@@ -1,3 +1,6 @@
+# uploads folder from multer
+./server/uploads
+
 # ide
 .idea
 
