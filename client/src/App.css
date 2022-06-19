@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 48px;
+  padding: 2%;
+}
+
+h2 {
+  font-size: 36px;
+  padding: 0 5%;
+}
+
+p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.contain-width {
+  max-width: 75%;
+}
+.padx-5 {
+  padding: 0 5%;
+}
+
+.row-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col {
+  flex: 1 1 50%;
+  padding: 5%;
+}
+
+.col img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.input {
+  margin: 0 auto;
+  width: 100%;
+  padding: 2%;
+}
+
+.input label {
+  font-size: 24px;
+  margin-right: 2%;
+}
+
+.input input {
+  font-size: 24px;
+  padding: 1%;
+}
+
+#button-submit button {
+  width: 100%;
+  padding: 1%;
+  margin: 0 auto;
+  font-size: 24px;
+}
