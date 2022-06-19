@@ -10,30 +10,30 @@ import lap from "../../assets/sitting_on_lap.jpg";
 function Cat() {
   return (
     <div>
-      <div class="container">
+      <div className="container">
         <h1>Enjoy pictures of my cat, Kash!</h1>
       </div>
       <div className="row-2">
-        <div class="col">
+        <div className="col">
           <img src={christmas} alt="Christmas kitty!" />
         </div>
-        <div class="col">
+        <div className="col">
           <img src={coffeeTable} alt="Kitty just chillin'" />
         </div>
       </div>
       <div className="row-2">
-        <div class="col">
+        <div className="col">
           <img src={bed} alt="sleepy kitty!" />
         </div>
-        <div class="col">
+        <div className="col">
           <img src={sink} alt="Kitty just chillin' in a sink" />
         </div>
       </div>
       <div className="row-2">
-        <div class="col">
+        <div className="col">
           <img src={pounce} alt="Kitty ready to pounce!" />
         </div>
-        <div class="col">
+        <div className="col">
           <img src={lap} alt="Kitty in my lap!" />
         </div>
       </div>
