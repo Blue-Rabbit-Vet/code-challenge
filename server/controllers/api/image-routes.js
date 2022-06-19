@@ -23,16 +23,13 @@ router.get("/:key", async (req, res) => {
 router.put("/uploadAvatar/:user", upload.single("file"), async (req, res) => {
   const { filename } = req.file;
   let file_key;
-  const userId = req.params.user;
+  const user = req.params.user;
   // Try to upload the file
   try {
     await uploadFile(req.file);
-
-    file_key = filename;
-    res.status(200).json({ message: "File upload Successful!" });
+    file_key = `/api/images/${filename}`;
   } catch (err) {
     console.log(err);
-    res.status(500).json({ message: "File upload failed." });
   }
   // If file upload is successful, update the associated user.
   User.update(
@@ -41,7 +38,7 @@ router.put("/uploadAvatar/:user", upload.single("file"), async (req, res) => {
     },
     {
       where: {
-        id: userId,
+        username: user,
       },
     }
   )
@@ -50,9 +47,8 @@ router.put("/uploadAvatar/:user", upload.single("file"), async (req, res) => {
         res.status(404).json({
           message: "No user found with this id",
         });
-
-        res.json(dbUserData);
       }
+      res.json(dbUserData);
     })
     .catch((err) => {
       console.log(err);

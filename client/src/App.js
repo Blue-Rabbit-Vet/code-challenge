@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
+// import components
+import Jumbo from "./components/jumbo";
+import AboutMe from "./components/aboutMe";
+import FullUserForm from "./components/fullUserForm";
+import UsernameForm from "./components/usernameForm";
+import AvatarForm from "./components/avatarForm";
+import Cat from "./components/cat";
 function App() {
+  // For the sake of simplicity I will fill out the app.js jsx to be a single
+  // page application with all components listed in order.
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Jumbo />
+      <AboutMe />
+      <FullUserForm />
+      <UsernameForm />
+      <AvatarForm />
+      <Cat />
     </div>
   );
 }

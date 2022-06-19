@@ -19,11 +19,11 @@ router.get("/", (req, res) => {
     });
 });
 
-router.get("/:userId", (req, res) => {
+router.get("/:username", (req, res) => {
   // get  single user
   User.findOne({
     where: {
-      id: req.params.userId,
+      username: req.params.username,
     },
   })
     .then((dbUserData) => {
@@ -33,15 +33,14 @@ router.get("/:userId", (req, res) => {
       res.json(dbUserData);
     })
     .catch((err) => {
-      res
-        .status(500)
-        .json({
-          message: "An internal error occurred. Please try again later.",
-        });
+      res.status(500).json({
+        message: "An internal error occurred. Please try again later.",
+      });
     });
 });
 
 router.post("/", (req, res) => {
+  console.log(req);
   //create new user
   User.create({
     username: req.body.username,
@@ -50,7 +49,7 @@ router.post("/", (req, res) => {
       if (!dbUserData) {
         res.status(500).json({ message: "Error creating user" });
       }
-      res.status(200).json({ message: "User Created" });
+      res.json(dbUserData);
     })
     .catch((err) => {
       console.log(err);
