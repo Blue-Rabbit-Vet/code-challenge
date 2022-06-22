@@ -4,6 +4,7 @@
 - Next.js for production grade React. I just kinda like using Next, a server side rendering of React. Another reason is that i can easily deploy this project
 - TypeScript, currently learning type, I am indifferent to using it over JavaScript. It's really good for catching run time error but it did slow me down a little.
 - MockAPi, a cloud api storage service for me to host my api data. https://mockapi.io
+- React-Images-Uploading, component library that helps me let users upload images. https://www.npmjs.com/package/react-images-uploading
 
 ## About
 Runing this project should be simple. If you downloaded/clone/fork this project with all its files. I believe all you have to do is npm i, and to run it is npm run dev.
