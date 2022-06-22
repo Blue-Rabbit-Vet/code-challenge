@@ -121,6 +121,3 @@ const Home: NextPage = () => {
 }
 
 export default Home
-
-//PMAK-62b0c9e39405853e3ceb2bf6-e7c98f89677f5fde32e8493d9b8ad0e823
-//https://www.youtube.com/watch?v=FLnxgSZ0DG4
