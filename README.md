@@ -3,12 +3,12 @@
 - Node SASS for SASS Library, superset of CSS, SASS Loader for it to load it. I am more familiar with SASS than css so I replaced it.
 - Next.js for production grade React. I just kinda like using Next, a server side rendering of React. Another reason is that i can easily deploy this project
 - TypeScript, currently learning type, I am indifferent to using it over JavaScript. It's really good for catching run time error but it did slow me down a little.
-- MockAPi, a cloud api storage service for me to host my api data.
+- MockAPi, a cloud api storage service for me to host my api data. https://mockapi.io
 
 ## About
-Runing this project should be simple. With package lock, I believe all you need to do is npm i, if you have all the files. To run it should be npm run dev.
+Runing this project should be simple. If you downloaded/clone/fork this project with all its files. I believe all you have to do is npm i, and to run it is npm run dev.
 
-I did deploy it so you can click this link and see. 
+I did deploy it so you can click this link and see. https://bluevet.vercel.app/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
